@@ -76,9 +76,9 @@
 				<td>
 				<button id="minus" onclick="minusClick()">−</button>
 				<input type="number" value="0" min="0" id="input"/>
-				<button id="plus" onclick="plusClick()">+</button>
+				<button id="plus" onclick="plusClick(gruszka)">+</button>
 				</td>
-				<td><h2>3,99zł/sztuka</h2></td>
+				<td><h2><output name="price" onload="readPrice(gruszka)"></output>zł/<output name="unit" onload="readUnit(gruszka)"></output></h2></td>
 			</tr>
 			<tr>
 				<td colspan="2">
