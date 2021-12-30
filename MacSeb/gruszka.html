@@ -2,12 +2,12 @@
 
 <head>
     <title>MacSeb</title>
-        <script src="functions.js"></script>
+    <script src="functions.js"></script>
     <link rel="stylesheet" href="lab_style.css" type="text/css">
     <link rel="shortcut icon" type="image/jpg" href="logo.svg"/>
 </head>
 
-<body>
+<body onload="readUnit()">
 
     <div id="main" a href>
         <div id="header">
@@ -76,9 +76,9 @@
 				<td>
 				<button id="minus" onclick="minusClick()">−</button>
 				<input type="number" value="0" min="0" id="input"/>
-				<button id="plus" onclick="plusClick(gruszka)">+</button>
+				<button id="plus" onclick="plusClick("gruszka")">+</button>
 				</td>
-				<td><h2><output name="price" onload="readPrice(gruszka)"></output>zł/<output name="unit" onload="readUnit(gruszka)"></output></h2></td>
+				<td><h2><output id="price"></output>zł/<label id="unit"></label><output id="unit"></output></h2></td>
 			</tr>
 			<tr>
 				<td colspan="2">
