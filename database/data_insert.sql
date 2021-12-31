@@ -40,4 +40,4 @@ VALUES
 INSERT INTO Orders(first_name, last_name, city, zip_code, street, building_number,
 flat_number, price, items)
 VALUES
-    ('Seba', 'D', 'Warszawa', '00-631', 'Koszykowa', '10a', 10, 121.42, '[{"product_name":"bułki", "number_of_items":"3", "quantity":"NULL", "unit":"NULL"}, {"product_name":"jabłko", "number_of_items":"NULL", "quantity":"0.1111", "unit":"kg"}]');
+    ('Seba', 'D', 'Warszawa', '00-631', 'Koszykowa', '10a', 10, 121.42, '[{"product_name":"bułki", "quantity":"1"}, {"product_name":"jabłko", "quantity":"0.1111"}]');
