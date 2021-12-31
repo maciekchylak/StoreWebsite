@@ -14,7 +14,7 @@
                         <img src="logo.svg" width=64px align=right>
                 <a href="index.php"><h1>MacSeb</h1></a>
                         <hr>
-            <h2>Gruszka</h2>
+            <h2>Szynka parmeńska</h2>
         </div>
         <br>
                 <div id="layout">
@@ -71,7 +71,7 @@
 				<th>Cena/jednostka</th>
 			</tr>
 			<tr>
-				<td rowspan="3"><img src="Images/gruszka.jpg" width=400px></td>
+				<td rowspan="3"><img src="Images/szynka_parmenska.jpg" width=400px></td>
 				<td>
 				<button id="minus" onclick="minusClick()">−</button>
 				<input type="number" value="0" min="0" max=<?php
@@ -82,7 +82,7 @@
 
                             $conn = new mysqli($servername, $username, $password, $dbname);
 
-                            $sql = "SELECT quantity FROM Products WHERE product_name = 'gruszka'";
+                            $sql = "SELECT quantity FROM Products WHERE product_name = 'szynka_parmenska'";
                             $result = $conn->query($sql);
 
                             if ($result->num_rows > 0) {
@@ -106,7 +106,7 @@
 
                             $conn = new mysqli($servername, $username, $password, $dbname);
 
-                            $sql = "SELECT price FROM Products WHERE product_name = 'gruszka'";
+                            $sql = "SELECT price FROM Products WHERE product_name = 'szynka_parmenska'";
                             $result = $conn->query($sql);
 
                             if ($result->num_rows > 0) {
@@ -125,7 +125,7 @@
 
                             $conn = new mysqli($servername, $username, $password, $dbname);
 
-                            $sql = "SELECT unit FROM Products WHERE product_name = 'gruszka'";
+                            $sql = "SELECT unit FROM Products WHERE product_name = 'szynka_parmenska'";
                             $result = $conn->query($sql);
 
                             if ($result->num_rows > 0) {
