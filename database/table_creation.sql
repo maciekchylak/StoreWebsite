@@ -4,7 +4,6 @@ CREATE TABLE Products(
 	product_id INTEGER NOT NULL AUTO_INCREMENT,
 	product_name VARCHAR(50) NOT NULL,
     category VARCHAR(50) NOT NULL,
-	number_of_items INTEGER NULL,
 	quantity FLOAT(10, 1) NULL,
 	unit VARCHAR(50) NULL,
     price FLOAT(10,2) NOT NULL,
