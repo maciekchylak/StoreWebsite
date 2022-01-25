@@ -61,6 +61,7 @@
             <br>
         </div>
 		<div id="right">
+        <a href="formularz.php" class="button">Podaj dane</a>
 		</div>
 		</div>
         <br>
