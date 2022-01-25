@@ -71,7 +71,7 @@
 				<th>Cena/jednostka</th>
 			</tr>
 			<tr>
-				<td rowspan="3"><img src="Images/marchewka.jpg" width=400px></td>
+				<td rowspan="3"><img src="images/marchewka.jpg" width=400px></td>
 				<td>
 				<button id="minus" onclick="minusClick()">−</button>
 				<input type="number" value="0" min="0" max=<?php
