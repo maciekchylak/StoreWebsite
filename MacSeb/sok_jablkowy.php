@@ -141,7 +141,7 @@
 			</tr>
 			<tr>
 				<td colspan="2">
-				<button type="button" onclick="dodaj()">Dodaj</button>
+				<button type="button" onclick="dodaj('sok_jablkowy', document.getElementById('input').value">Dodaj</button>
 				</td>
 			</tr>
 		</table>

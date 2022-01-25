@@ -14,10 +14,6 @@ function minusClick(){
 	}
 };
 
-function dodaj(){
-	document.getElementById('input').value = 0;
-}
-
 function readPrice(filename){
 	price = 4;
 	document.getElementById('price').innerText = price;
@@ -32,3 +28,8 @@ function readAvailable(filename){
 	available = 5;
 	return available;
 }
+
+function dodaj(item_name, quantity) {
+	document.cookie = item_name + '=' + quantity;
+};
+  
