@@ -84,7 +84,8 @@
                             
                             '<button id="minus" onclick="minusClick()">−</button>'+
 				            '<input type="number" value=' + '"' + cart[i][1].toString() + '"' + 
-                            ' min="0" max='+'<?php' +
+                            ' min="0" max='+
+                            '<'+'?php' +
                             '$servername = "ulsq0qqx999wqz84.chr7pe7iynqr.eu-west-1.rds.amazonaws.com";'+
                             '$username = "rtwkas66jqm2k1z0";'+
                             '$password = "prxh0h3bkdndj346";'+
@@ -108,7 +109,7 @@
                             + '</td>';
                         k+='<td>'+
                             
-                            '<?php'+
+                            '<'+'?php'+
                             '$servername = "ulsq0qqx999wqz84.chr7pe7iynqr.eu-west-1.rds.amazonaws.com";'+
                             '$username = "rtwkas66jqm2k1z0";'+
                             '$password = "prxh0h3bkdndj346";'+
@@ -131,10 +132,10 @@
                             +'</td>';
                         k+= '</tr>';
                     }
+                    k+='<tr><td colspan="4" style="background-color:rgb(4,170,109)"><h3><a href="formularz.php" style="color:white">Podaj dane</a></h3></td></tr>';
                     k+='</tbody>';
                     document.getElementById('tableData').innerHTML = k;
                     </script>
-        <a href="formularz.php" class="button">Podaj dane</a>
 		</div>
 		</div>
         <br>
