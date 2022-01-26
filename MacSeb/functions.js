@@ -19,6 +19,11 @@ function dodaj(){
 
 }
 
+function reload(){
+	//to do
+	window.location.reload();
+}
+
 function readPrice(filename){
 	price = 4;
 	document.getElementById('price').innerText = price;

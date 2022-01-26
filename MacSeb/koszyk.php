@@ -94,7 +94,7 @@
                             '$conn = new mysqli($servername, $username, $password, $dbname);'+
 
                             '$sql = "SELECT quantity FROM Products WHERE product_name = ' + cart[i][0].toString() + '";'+
-                            '$result = $conn->query($sql);'+
+                            '$result = $conn-'+'>'+'query($sql);'+
 
                             'if ($result->num_rows > 0) {'+
                             'while($row = $result->fetch_assoc()) {'+
