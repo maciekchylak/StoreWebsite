@@ -17,6 +17,7 @@ CREATE TABLE Orders(
     	timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
 	first_name VARCHAR(50) NOT NULL,
  	last_name VARCHAR(50) NOT NULL,
+	email VARCHAR(50) NOT NULL,
     	city VARCHAR(50) NULL,
     	zip_code VARCHAR(50) NULL,
     	street VARCHAR(50) NULL,
