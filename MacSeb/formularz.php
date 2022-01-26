@@ -5,7 +5,6 @@
     <script src="functions.js"></script>
     <link rel="stylesheet" href="lab_style.css" type="text/css">
     <link rel="shortcut icon" type="image/jpg" href="logo.svg"/>
-    </script>
 </head>
 
 <body>
