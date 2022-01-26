@@ -36,45 +36,64 @@ function readAvailable(filename){
 
 function validateCode(){
 	var letter = /^[0-9][0-9]-[0-9][0-9][0-9]$/;
-	if(letter.test(postcode.value)==true && postcode.value!=""){
-		postcode.style.backgroundColor = 'white';
+	if(letter.test(document.getElementById('postcode').value)==true && document.getElementById('postcode').value!=""){
+		document.getElementById('postcode').style.backgroundColor = 'white';
 	}else{
-		postcode.style.backgroundColor = 'red';
+		document.getElementById('postcode').style.backgroundColor = 'red';
 	}
    }
 
-function validateName(atr){
+function validateFirstName(){
 	var letter = /^[\s\p{L}]+$/u;
-	if(letter.test(atr.value)==true && atr.value!=""){
-		atr.style.backgroundColor = 'white';
+	if(letter.test(document.getElementById('first_name').value)==true && document.getElementById('first_name').value!=""){
+		document.getElementById('first_name').style.backgroundColor = 'white';
 	}else{
-		atr.style.backgroundColor = 'red';
+		document.getElementById('first_name').style.backgroundColor = 'red';
 	}
    }
+
+   function validateLastName(){
+	var letter = /^[\s\p{L}]+$/u;
+	if(letter.test(document.getElementById('last_name').value)==true && document.getElementById('last_name').value!=""){
+		document.getElementById('last_name').style.backgroundColor = 'white';
+	}else{
+		document.getElementById('last_name').style.backgroundColor = 'red';
+	}
+   }
+   
+   function validateCity(){
+	var letter = /^[\s\p{L}]+$/u;
+	if(letter.test(document.getElementById('city').value)==true && document.getElementById('city').value!=""){
+		document.getElementById('city').style.backgroundColor = 'white';
+	}else{
+		document.getElementById('city').style.backgroundColor = 'red';
+	}
+   }   
+
 function validateEmail(){
 	var letter = /^[a-zA-Z0-9].*@[a-zA-Z0-9].*\.[a-zA-Z].*$/;
-	if(letter.test(email.value)==true && email.value!=""){
-		email.style.backgroundColor = 'white';
+	if(letter.test(document.getElementById('email').value)==true && document.getElementById('email').value!=""){
+		document.getElementById('email').style.backgroundColor = 'white';
 	}else{
-		email.style.backgroundColor = 'red';
+		document.getElementById('email').style.backgroundColor = 'red';
 	}
    }
 
 function validateNumber(){
 	var letter = /^[0-9]+([a-zA-Z]?)$/;
-	if(letter.test(number.value)==true && number.value!=""){
-		number.style.backgroundColor = 'white';
+	if(letter.test(document.getElementById('number').value)==true && document.getElementById('number').value!=""){
+		document.getElementById('number').style.backgroundColor = 'white';
 	}else{
-		number.style.backgroundColor = 'red';
+		document.getElementById('number').style.backgroundColor = 'red';
 	}
 }
 
 function validateLocal(){
 	var letter = /^[0-9]+$/;
-	if(letter.test(local.value)==true){
-		local.style.backgroundColor = 'white';
+	if(letter.test(document.getElementById('local').value)==true){
+		document.getElementById('local').style.backgroundColor = 'white';
 	}else{
-		local.style.backgroundColor = 'red';
+		document.getElementById('local').style.backgroundColor = 'red';
 	}
 }
 

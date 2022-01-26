@@ -67,11 +67,11 @@
                 <table>
                     <tr>
                         <td><label for="first_name">Imię</label></td>
-                        <td><input type="text" name="first_name" id="first_name" oninput="validateName(first_name)"/></td>
+                        <td><input type="text" name="first_name" id="first_name" oninput="validateFirstName()"/></td>
                     </tr>
                     <tr>
                         <td><label for="last_name">Nazwisko</label></td>
-                        <td><input type="text" name="last_name" id="last_name" oninput="validateName(last_name)"/></td>
+                        <td><input type="text" name="last_name" id="last_name" oninput="validateLastName()"/></td>
                     </tr>
                     <tr>
                         <td><label for="email">e-mail</label></td>
@@ -95,7 +95,7 @@
                     </tr>
                     <tr>
                         <td><label for="city">Miasto</label></td>
-                        <td><input type="text" name="city" id="city" oninput="validateName(city)"/></td>
+                        <td><input type="text" name="city" id="city" oninput="validateCity()"/></td>
                     </tr>
                     <tr>
                         <td colspan="2">
