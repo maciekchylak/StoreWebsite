@@ -62,13 +62,13 @@
             <br>
         </div>
 		<div id="right">
-            <table id="produkty">
+            <table id="produkty" style="width:95%">
                 <thead>
                     <tr>
-                        <th>Zdjęcie</th>
-                        <th>Nazwa produktu</th>
-                        <th>Ilość</th>
-                        <th>Cena</th>
+                        <th width=20%>Zdjęcie</th>
+                        <th width=40%>Nazwa produktu</th>
+                        <th width=30%>Ilość</th>
+                        <th width=10%>Usuń</th>
                     </tr>
                 </thead>
                     <tbody id="tableData"></tbody>
@@ -78,58 +78,10 @@
                     var k = '<tbody>'
                     for(i = 0;i < cart.length; i++){
                         k+= '<tr>';
-                        k+= '<td>' + '<img src="images/'+ cart[i][0] + '.jpg" width=50px>' + '</td>';
+                        k+= '<td>' + '<img src="images/'+ cart[i][0] + '.jpg" width=100px>' + '</td>';
                         k+= '<td>' + cart[i][0] + '</td>';
-                        k+= '<td>' + 
-                            
-                            '<button id="minus" onclick="minusClick()">−</button>'+
-				            '<input type="number" value=' + '"' + cart[i][1].toString() + '"' + 
-                            ' min="0" max='+
-                            '<'+'?php' +
-                            '$servername = "ulsq0qqx999wqz84.chr7pe7iynqr.eu-west-1.rds.amazonaws.com";'+
-                            '$username = "rtwkas66jqm2k1z0";'+
-                            '$password = "prxh0h3bkdndj346";'+
-                            '$dbname = "y7snb0jclmyepnar";'+
-
-                            '$conn = new mysqli($servername, $username, $password, $dbname);'+
-
-                            '$sql = "SELECT quantity FROM Products WHERE product_name = ' + cart[i][0].toString() + '";'+
-                            '$result = $conn-'+'>'+'query($sql);'+
-
-                            'if ($result->num_rows > 0) {'+
-                            'while($row = $result->fetch_assoc()) {'+
-                            '    echo $row["quantity"];'+
-                            '}'+
-                            '} else {'+
-                            'echo 0;'+
-                            '}'+
-                            '$conn->close();'+
-                    '?> id="input"/>'+
-				'<button id="plus" onclick="plusClick()">+</button>'
-                            + '</td>';
-                        k+='<td>'+
-                            
-                            '<'+'?php'+
-                            '$servername = "ulsq0qqx999wqz84.chr7pe7iynqr.eu-west-1.rds.amazonaws.com";'+
-                            '$username = "rtwkas66jqm2k1z0";'+
-                            '$password = "prxh0h3bkdndj346";'+
-                            '$dbname = "y7snb0jclmyepnar";'+
-
-                            '$conn = new mysqli($servername, $username, $password, $dbname);'+
-
-                            '$sql = "SELECT price FROM Products WHERE product_name = '+cart[i][0].toString()+'";'+
-                            '$result = $conn->query($sql);'+
-
-                            'if ($result->num_rows > 0) {'+
-                            'while($row = $result->fetch_assoc()) {'+
-                            '    echo $row["price"];'+
-                            '}'+
-                            '} else {'+
-                            'echo 0;'+
-                            '}'+
-                            '$conn->close();'+
-                    '?>'    
-                            +'</td>';
+                        k+= '<td>' + cart[i][1] + '</td>';
+                        k+='<td><input type="image" src="images/bin.png" onClick="reload()" width=32px></td>'
                         k+= '</tr>';
                     }
                     k+='<tr><td colspan="4" style="background-color:rgb(4,170,109)"><h3><a href="formularz.php" style="color:white">Podaj dane</a></h3></td></tr>';
