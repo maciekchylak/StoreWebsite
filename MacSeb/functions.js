@@ -71,7 +71,7 @@ function validateNumber(){
 
 function validateLocal(){
 	var letter = /^[0-9]+$/;
-	if(letter.test(postcode.value)==true){
+	if(letter.test(local.value)==true){
 		local.style.backgroundColor = 'white';
 	}else{
 		local.style.backgroundColor = 'red';
