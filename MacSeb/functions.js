@@ -110,9 +110,10 @@ function zamow(){
 	local.style.backgroundColor == 'white' &&
 	postcode.style.backgroundColor == 'white' && postcode.value!="" &&
 	city.style.backgroundColor == 'white' && city.value!=""){
-		//coś się dzieje
+    	return true;
 	}else{
-		//nic się nie dzieje
+		alert("Warunki formularza nie są spełnione");
+		return false;
 	}
 }
 

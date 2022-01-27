@@ -62,7 +62,7 @@
             <br>
         </div>
 		<div id="right">
-            <form id="form" width=100px action="insert_data.php", method="POST">
+            <form id="form" width=100px action="insert_data.php", method="POST" onsubmit="return zamow()">
                 <legend>Podaj dane do zamówienia</legend>
                 <table>
                     <tr>
