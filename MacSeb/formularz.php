@@ -62,7 +62,7 @@
             <br>
         </div>
 		<div id="right">
-            <fieldset id="form" width=100px>
+            <form id="form" width=100px action="insert_data.php", method="POST">
                 <legend>Podaj dane do zamówienia</legend>
                 <table>
                     <tr>
@@ -99,12 +99,11 @@
                     </tr>
                     <tr>
                         <td colspan="2">
-                        <button type="button" id="order_button" onclick="zamow()">Złóż zamówienie</button>
+                        <input type="submit" id="order_button">Złóż zamówienie</input>
                         </td>
                     </tr>
                 </table>
                 
-            </fieldset>
         </form>
 		</div>
             

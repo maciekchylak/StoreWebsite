@@ -74,7 +74,7 @@
                     <tbody id="tableData"></tbody>
                 </table>
                 <script type="text/javascript">
-                    var cart = generate_cart("jablko=10; gruszka=4");
+                    var cart = generate_cart(document.cookie);
                     var k = '<tbody>'
                     for(i = 0;i < cart.length; i++){
                         k+= '<tr>';

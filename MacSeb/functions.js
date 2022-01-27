@@ -14,9 +14,9 @@ function minusClick(){
 	}
 };
 
-function dodaj(){
+function dodaj(product_name, quantity){
+	document.cookie = product_name + "=" + quantity;
 	document.getElementById('input').value = 0;
-
 }
 
 function reload(){
