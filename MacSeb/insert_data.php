@@ -49,11 +49,20 @@
     }
     $final_json  = 	substr($final_json, 0, -2);
     $final_json .= "]"; 
-    echo "{$final_json}";
     
     $sql = "INSERT INTO Orders(first_name, last_name, email, city, zip_code, street, building_number, flat_number, items) VALUES
     ('$first_name', '$last_name', '$email', '$city', '$postcode', '$street', '$number', '$local', '$final_json')";
     $result = $conn->query($sql);
    
+    if (isset($_SERVER['HTTP_COOKIE'])) {
+        $cookies = explode(';', $_SERVER['HTTP_COOKIE']);
+        foreach($cookies as $cookie) {
+            $parts = explode('=', $cookie);
+            $name = trim($parts[0]);
+            setcookie($name, '', time()-1000);
+            setcookie($name, '', time()-1000, '/');
+        }
+    }
+
     $conn->close();
 ?>

@@ -99,7 +99,7 @@
                     </tr>
                     <tr>
                         <td colspan="2">
-                        <input type="submit" id="order_button">Złóż zamówienie</input>
+                        <input type="submit" id="order_button" value="Złóż zamówienie">
                         </td>
                     </tr>
                 </table>

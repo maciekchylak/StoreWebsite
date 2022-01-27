@@ -81,7 +81,9 @@
                         k+= '<td>' + '<img src="images/'+ cart[i][0] + '.jpg" width=100px>' + '</td>';
                         k+= '<td>' + cart[i][0] + '</td>';
                         k+= '<td>' + cart[i][1] + '</td>';
-                        k+='<td><input type="image" src="images/bin.png" onClick="reload()" width=32px></td>'
+                        k+='<td><input type="image" src="images/bin.png" onClick="reload(\'';
+                        k+=String(cart[i][0]);
+                        k+='\')" width=32px></td>';
                         k+= '</tr>';
                     }
                     k+='<tr><td colspan="4" style="background-color:rgb(4,170,109)"><h3><a href="formularz.php" style="color:white">Podaj dane</a></h3></td></tr>';
